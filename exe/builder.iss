@@ -1,4 +1,4 @@
-﻿; -- Document Builder Installer --
+; -- Document Builder Installer --
 
 #ifndef BRANDING_DIR
 #define BRANDING_DIR '.'
@@ -72,7 +72,7 @@ SignTool          =byparam $p
 VersionInfoVersion={#VERSION}
 
 [Languages]
-#ifdef _ONLYOFFICE
+#ifdef _UNIVAULTOFFICE
 Name: "en"; MessagesFile: "compiler:Default.isl"
 Name: "ru"; MessagesFile: "compiler:Languages\Russian.isl"
 #else

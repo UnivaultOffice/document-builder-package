@@ -6,16 +6,16 @@ CP := cp -rf -t
 RM := rm -rfv
 CURL := curl -fLo
 
-COMPANY_NAME ?= ONLYOFFICE
+COMPANY_NAME ?= UNIVAULTOFFICE
 PRODUCT_NAME ?= DocumentBuilder
 
 COMPANY_NAME_LOW = $(shell echo $(COMPANY_NAME) | tr A-Z a-z)
 PRODUCT_NAME_LOW = $(shell echo $(PRODUCT_NAME) | tr A-Z a-z)
 
-PUBLISHER_NAME ?= Ascensio System SIA
-PUBLISHER_URL ?= http://onlyoffice.com
-SUPPORT_URL ?= http://support.onlyoffice.com
-SUPPORT_MAIL ?= support@onlyoffice.com
+PUBLISHER_NAME ?= Univault Technologies
+PUBLISHER_URL ?= http://univaultoffice.github.io
+SUPPORT_URL ?= http://support.univaultoffice.github.io
+SUPPORT_MAIL ?= support@univaultoffice.github.io
 
 PRODUCT_VERSION ?= 0.0.0
 BUILD_NUMBER ?= 0

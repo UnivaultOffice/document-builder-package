@@ -1,7 +1,7 @@
-﻿param (
+param (
     [System.Version]$Version = "0.0.0.0",
     [string]$Arch = "x64",
-    [string]$CompanyName = "ONLYOFFICE",
+    [string]$CompanyName = "UNIVAULTOFFICE",
     [string]$ProductName = "DocumentBuilder",
     [string]$BuildDir = "build",
     [string]$Branding,
@@ -51,7 +51,7 @@ if ($Branding) {
 }
 if ($Sign) {
     $CertName = $(if ($env:WINDOWS_CERTIFICATE_NAME) { `
-        $env:WINDOWS_CERTIFICATE_NAME } else { "Ascensio System SIA" })
+        $env:WINDOWS_CERTIFICATE_NAME } else { "Univault Technologies" })
     $TimestampServer = "http://timestamp.digicert.com"
     $InnoArgs += "/DSIGN"
     $InnoArgs += "/Sbyparam=signtool sign /a /v /n `$q$CertName`$q /t $TimestampServer `$f"
